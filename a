@@ -1,5 +1,5 @@
 function FindProxyForURL(url, host) {
-	if(shExpMatch(host, "mail.aces.org"))
+	if(shExpMatch(host, "mail.aces.org") || shExpMatch(host, "powerschool.aces.org"))
 		return "DIRECT";
 	if ((shExpMatch(host, "clients2.google.com") || shExpMatch(host, "*.clients2.google.com")) ||
 		(shExpMatch(host, "clients2.googleusercontent.com") || shExpMatch(host, "*.clients2.googleusercontent.com")) ||
